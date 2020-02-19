@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Project | Class 2 </title> 
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<style>
+.space {
+ padding-top:200px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+
+  <div class="row space">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+  <div class="card">
+  <h2 class="text-center"> Naira Conversion </h2>
+  <div class="card-body">
+  
+  <form name="currencyConversion" method="POST" action="">
+  <div class="input-group">
+	<div class="input-group-prepend">
+    <span class="input-group-text">Select Currency</span>
+  </div>
+    <select class="custom-select" onchange="swat()" id="currency">
+      <option value="dollar">Dollar</option>
+      <option value="euros">Euros</option>
+      <option value="pounds">Pounds</option>
+      <option value="yuan">Chineese Yuan</option>
+      <option value="rupees">Indian Rupees</option>
+	  <option value="bitcoin">Bitcoin</option>
+    </select>
+  </div>
+  </br>
+<div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Conversion Amount</span>
+  </div>
+  <input type="text" class="form-control" name="amount" id="amount" required>
+</div>
+</br>
+<button type="button" class="btn btn-primary" onclick="convert()">Convert</button>
+
+<p id="demo2" class="text-danger" style= font-size:20px > </p>
+
+<p id="demo" class="text-success" style= font-size:20px > </p>
+
+</form>
+
+
+</div>
+</div>
+</div>
+ <div class="col-md-4"></div>
+</div>
+</div>
+</body>
+
+</html>
+<!-- My JS -->
+<script src= "currency.js"></script>
+
+<!-- type="text/javascript" href=  -->
+
